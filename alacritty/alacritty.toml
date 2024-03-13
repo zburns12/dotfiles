@@ -1,0 +1,27 @@
+# $HOME/.config/alacritty/alacritty.toml
+
+# There are the specification here: https://github.com/alacritty/alacritty/blob/master/extra/man/alacritty.5.scd
+
+import = [
+    "~/.config/alacritty/themes/themes/deep_space.toml"
+]
+
+[window]
+
+opacity = 1.0
+
+padding.x = 10
+padding.y = 10
+
+decorations = "buttonless"
+decorations_theme_variant = "Light" # "Dark"
+
+[font]
+
+normal.family = "MartianMono Nerd Font"
+bold.family = "MartianMono Nerd Font"
+italic.family = "MartianMono Nerd Font"
+bold_italic.family = "MartianMono Nerd Font"
+
+size = 15.0
+
