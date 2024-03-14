@@ -1,0 +1,38 @@
+# Wait 10 milliseconds for starship to check files under the current directory.
+scan_timeout = 10
+
+# Disable the blank line at the start of the prompt
+add_newline = true
+
+# Set 'foo' as custom color palette
+palette = 'foo'
+
+# Define custom colors
+[palettes.foo]
+# Overwrite existing color
+blue = '21'
+# Define new color
+mustard = '#af8700'
+
+[container]
+format = '[$symbol \[$name\]]($style) '
+
+[helm]
+format = 'via [⎈ $version](bold white) '
+
+[kubernetes]
+format = 'on [⛵ ($user on )($cluster in )$context \($namespace\)](dimmed green) '
+disabled = false
+contexts = [
+  { context_pattern = "dev.local.cluster.k8s", style = "green", symbol = "💔 " },
+]
+
+[python]
+symbol = '👾 '
+pyenv_version_name = true
+# Only use the `python3` binary to get the version.
+python_binary = 'python3'
+
+[terraform]
+format = '[🏎💨 $version$workspace]($style) '
+
